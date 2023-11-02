@@ -17,6 +17,8 @@ public class ParametersParser {
                 parameters.setDateFormat(parseDateFormat(arg));
             } else if (arg.startsWith("-top=")) {
                 parameters.setTop(parseTop(arg));
+            } else if (arg.equals("-skipErrors")) {
+                parameters.setSkipErrorsInRow(true);
             } else if (!arg.startsWith("-")) {
                 parameters.getFilenames().add(arg);
             }

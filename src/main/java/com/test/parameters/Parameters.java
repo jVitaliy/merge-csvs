@@ -7,10 +7,12 @@ public class Parameters {
     private boolean paramsExist;
     private String dateFormat;
     private int top;
+    private boolean skipErrorsInRow;
 
     public Parameters() {
         this.paramsExist = false;
         this.dateFormat = "MM/dd/yyyy";
+        this.skipErrorsInRow = false;
     }
 
     public List<String> getFilenames() {
@@ -40,5 +42,13 @@ public class Parameters {
 
     public void setTop(int top) {
         this.top = top;
+    }
+
+    public boolean isSkipErrorsInRow() {
+        return skipErrorsInRow;
+    }
+
+    public void setSkipErrorsInRow(boolean skipErrorsInRow) {
+        this.skipErrorsInRow = skipErrorsInRow;
     }
 }

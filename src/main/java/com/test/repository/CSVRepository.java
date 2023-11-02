@@ -5,5 +5,5 @@ import com.test.model.CSVRow;
 import java.util.List;
 
 public interface CSVRepository {
-    List<CSVRow> findAll();
+    List<CSVRow> findAll(boolean skipRowsWithErrors);
 }

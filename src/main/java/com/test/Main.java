@@ -22,10 +22,10 @@ public class Main {
             CSVRepository csvRepository = CSVRepositoryFactory.getInstanceOf(CSVRepositoryType.MY_CSV_READER, filename,
                     parameters.getDateFormat());
             if (csvRepository == null) {
-                //TODO exception
+                System.err.println("not supported repository");
                 return;
             }
-            extractTop.append(csvRepository.findAll());
+            extractTop.append(csvRepository.findAll(parameters.isSkipErrorsInRow()));
         }
         CSVTablePrinter printer = new CSVTablePrinter(parameters.getDateFormat());
         printer.printResult(extractTop.getTopDesc(parameters.getTop()));

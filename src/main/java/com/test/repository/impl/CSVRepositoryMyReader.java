@@ -6,6 +6,7 @@ import com.test.repository.CSVRepository;
 import com.test.repository.DataReader;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class CSVRepositoryMyReader implements CSVRepository {
@@ -18,10 +19,21 @@ public class CSVRepositoryMyReader implements CSVRepository {
     }
 
     @Override
-    public List<CSVRow> findAll() {
+    public List<CSVRow> findAll(boolean skipRowsWithErrors) {
 
         return reader.readLines().stream()
-                .map(mapper::mapFrom)
+                .map(line -> {
+                        try {
+                            return mapper.mapFrom(line);
+                        } catch (Exception e) {
+                            if (skipRowsWithErrors) {
+                                return null;
+                            } else {
+                                throw e;
+                            }
+                        }
+                })
+                .filter(Objects::nonNull)
                 .collect(Collectors.toList());
     }
 }

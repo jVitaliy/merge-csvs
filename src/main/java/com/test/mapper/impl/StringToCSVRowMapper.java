@@ -1,5 +1,6 @@
 package com.test.mapper.impl;
 
+import com.test.exception.MapperException;
 import com.test.mapper.RowMapper;
 import com.test.model.CSVRow;
 
@@ -32,9 +33,20 @@ public class StringToCSVRowMapper implements RowMapper<CSVRow> {
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
+
+        if (items[1].isEmpty()) {
+            throw new MapperException("empty quantity");
+        }
+        if (items[2].isEmpty()) {
+            throw new MapperException("empty product");
+        }
+
         csvRow.setQuantity(Integer.parseInt(items[1]));
         csvRow.setProduct(items[2]);
-        csvRow.setPrice(BigDecimal.valueOf(Double.parseDouble(items[3])));
+        csvRow.setPrice(!items[3].isEmpty()
+                ? BigDecimal.valueOf(Double.parseDouble(items[3]))
+                : BigDecimal.valueOf(0.0)
+        );
         csvRow.setCurrency(items[4]);
         return csvRow;
     }
