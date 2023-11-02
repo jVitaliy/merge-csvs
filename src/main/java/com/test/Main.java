@@ -32,7 +32,7 @@ public class Main {
     }
 
     private static void printHelp(){
-        System.out.println("Usage company-orders <filename1> <filename2>");
+        System.out.println("Usage java -jar company-orders-0.0.1.jar [OPTIONS] <filename1> <filename2>");
     }
 
 
