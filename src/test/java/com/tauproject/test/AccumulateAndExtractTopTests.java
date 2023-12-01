@@ -1,9 +1,7 @@
-package com.test;
+package com.tauproject.test;
 
-import com.test.accumulator.AccumulateAndExtractTop;
-import com.test.mapper.RowMapper;
-import com.test.mapper.impl.StringToCSVRowMapper;
-import com.test.model.CSVRow;
+import com.tauproject.test.accumulator.AccumulateAndExtractTop;
+import com.tauproject.test.model.CSVRow;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

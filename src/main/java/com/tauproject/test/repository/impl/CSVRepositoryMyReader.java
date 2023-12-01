@@ -1,9 +1,9 @@
-package com.test.repository.impl;
+package com.tauproject.test.repository.impl;
 
-import com.test.mapper.RowMapper;
-import com.test.model.CSVRow;
-import com.test.repository.CSVRepository;
-import com.test.repository.DataReader;
+import com.tauproject.test.mapper.RowMapper;
+import com.tauproject.test.model.CSVRow;
+import com.tauproject.test.repository.CSVRepository;
+import com.tauproject.test.repository.DataReader;
 
 import java.util.List;
 import java.util.Objects;

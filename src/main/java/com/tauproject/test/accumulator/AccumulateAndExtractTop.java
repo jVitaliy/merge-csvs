@@ -1,6 +1,6 @@
-package com.test.accumulator;
+package com.tauproject.test.accumulator;
 
-import com.test.model.CSVRow;
+import com.tauproject.test.model.CSVRow;
 
 import java.util.*;
 import java.util.stream.Collectors;

@@ -1,6 +1,6 @@
-package com.test.csv;
+package com.tauproject.test.csv;
 
-import com.test.repository.DataReader;
+import com.tauproject.test.repository.DataReader;
 
 import java.io.File;
 import java.io.FileNotFoundException;

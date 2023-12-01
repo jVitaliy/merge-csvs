@@ -1,11 +1,11 @@
-package com.test;
+package com.tauproject.test;
 
-import com.test.exception.MapperException;
-import com.test.mapper.RowMapper;
-import com.test.mapper.impl.StringToCSVRowMapper;
-import com.test.model.CSVRow;
-import com.test.repository.DataReader;
-import com.test.repository.impl.CSVRepositoryMyReader;
+import com.tauproject.test.exception.MapperException;
+import com.tauproject.test.mapper.RowMapper;
+import com.tauproject.test.mapper.impl.StringToCSVRowMapper;
+import com.tauproject.test.model.CSVRow;
+import com.tauproject.test.repository.DataReader;
+import com.tauproject.test.repository.impl.CSVRepositoryMyReader;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

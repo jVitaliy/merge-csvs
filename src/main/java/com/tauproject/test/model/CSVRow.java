@@ -1,4 +1,4 @@
-package com.test.model;
+package com.tauproject.test.model;
 
 import java.math.BigDecimal;
 import java.util.Currency;

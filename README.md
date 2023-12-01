@@ -15,7 +15,7 @@ gradlew.bat build
 Then go to the folder `build/libs` and get the jar file.
 how to run
 ```
-java -jar company-orders-0.0.1.jar [OPTIONS] file1 ... fileN
+java -jar merge-csvs-0.0.1.jar [OPTIONS] file1 ... fileN
 ```
 there are some options
  - `-top=N` set max of top records (default 10)

@@ -1,4 +1,4 @@
-package com.test.parameters;
+package com.tauproject.test.parameters;
 
 import java.util.ArrayList;
 

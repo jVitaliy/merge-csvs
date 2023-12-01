@@ -1,6 +1,6 @@
-package com.test.printer;
+package com.tauproject.test.printer;
 
-import com.test.model.CSVRow;
+import com.tauproject.test.model.CSVRow;
 
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;

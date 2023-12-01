@@ -1,8 +1,8 @@
-package com.test.repository;
+package com.tauproject.test.repository;
 
-import com.test.csv.MyCSVReader;
-import com.test.mapper.impl.StringToCSVRowMapper;
-import com.test.repository.impl.CSVRepositoryMyReader;
+import com.tauproject.test.csv.MyCSVReader;
+import com.tauproject.test.mapper.impl.StringToCSVRowMapper;
+import com.tauproject.test.repository.impl.CSVRepositoryMyReader;
 
 public class CSVRepositoryFactory {
     public static CSVRepository getInstanceOf(CSVRepositoryType csvRepositoryType, String filename, String dateFormat) {

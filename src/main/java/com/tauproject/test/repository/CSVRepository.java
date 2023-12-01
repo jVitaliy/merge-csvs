@@ -1,6 +1,6 @@
-package com.test.repository;
+package com.tauproject.test.repository;
 
-import com.test.model.CSVRow;
+import com.tauproject.test.model.CSVRow;
 
 import java.util.List;
 

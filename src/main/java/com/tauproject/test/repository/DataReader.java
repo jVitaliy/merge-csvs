@@ -1,4 +1,4 @@
-package com.test.repository;
+package com.tauproject.test.repository;
 
 import java.util.List;
 
